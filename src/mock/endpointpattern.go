@@ -2352,6 +2352,11 @@ var GetReposDeploymentsStatusesByOwnerByRepoByDeploymentIdByStatusId EndpointPat
 	Method:  "GET",
 }
 
+var PostReposDeploymentsPassFailDeploymentGate = EndpointPattern{
+	Pattern: "/repos/{owner}/{repo}/actions/runs/{run_id}/deployment_protection_rule",
+	Method:  "POST",
+}
+
 var PostReposDispatchesByOwnerByRepo EndpointPattern = EndpointPattern{
 	Pattern: "/repos/{owner}/{repo}/dispatches",
 	Method:  "POST",
