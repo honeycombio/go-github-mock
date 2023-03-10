@@ -42,11 +42,6 @@ var PostAppHookDeliveriesAttemptsByDeliveryId EndpointPattern = EndpointPattern{
 	Method:  "POST",
 }
 
-var GetAppInstallationRequests EndpointPattern = EndpointPattern{
-	Pattern: "/app/installation-requests",
-	Method:  "GET",
-}
-
 var GetAppInstallations EndpointPattern = EndpointPattern{
 	Pattern: "/app/installations",
 	Method:  "GET",
@@ -4012,21 +4007,6 @@ var DeleteUserRepositoryInvitationsByInvitationId EndpointPattern = EndpointPatt
 	Method:  "DELETE",
 }
 
-var GetUserSocialAccounts EndpointPattern = EndpointPattern{
-	Pattern: "/user/social_accounts",
-	Method:  "GET",
-}
-
-var PostUserSocialAccounts EndpointPattern = EndpointPattern{
-	Pattern: "/user/social_accounts",
-	Method:  "POST",
-}
-
-var DeleteUserSocialAccounts EndpointPattern = EndpointPattern{
-	Pattern: "/user/social_accounts",
-	Method:  "DELETE",
-}
-
 var GetUserSshSigningKeys EndpointPattern = EndpointPattern{
 	Pattern: "/user/ssh_signing_keys",
 	Method:  "GET",
@@ -4219,11 +4199,6 @@ var GetUsersSettingsBillingPackagesByUsername EndpointPattern = EndpointPattern{
 
 var GetUsersSettingsBillingSharedStorageByUsername EndpointPattern = EndpointPattern{
 	Pattern: "/users/{username}/settings/billing/shared-storage",
-	Method:  "GET",
-}
-
-var GetUsersSocialAccountsByUsername EndpointPattern = EndpointPattern{
-	Pattern: "/users/{username}/social_accounts",
 	Method:  "GET",
 }
 
